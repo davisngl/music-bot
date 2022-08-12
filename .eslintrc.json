@@ -1,0 +1,36 @@
+{
+	"extends": "eslint:recommended",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"rules": {
+        // enable additional rules
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["warn", "single"],
+        "semi": ["error", "never"],
+		"no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+		"space-unary-ops": [
+			2, {
+			  "words": true,
+			  "nonwords": true,
+			  "overrides": {
+				"new": false,
+				"++": false
+			  }
+		}],
+
+        // override configuration set by extending "eslint:recommended"
+        "no-empty": "warn",
+        "no-cond-assign": ["error", "always"],
+		"no-console": "off",
+
+        // disable rules from base configurations
+         "for-direction": "off"
+    }
+}

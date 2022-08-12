@@ -1,0 +1,28 @@
+{
+  "name": "music_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "nodemon ./src/index.js -i node_modules --delay 15",
+    "eslint": "npx eslint --fix --color --format stylish src/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/rest": "^1.0.1",
+    "discord-player": "^5.3.1",
+    "discord.js": "^14.1.2",
+    "dotenv": "^16.0.1",
+    "ffmpeg-static": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
